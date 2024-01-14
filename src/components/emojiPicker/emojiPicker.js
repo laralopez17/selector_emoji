@@ -41,19 +41,6 @@ export function EmojiPicker(props, inputRef) {
     }
   }
 
-  /*function EmojiPickerContainer() {
-    return (
-      <div>
-        <EmojiSearch onSearch={handleSearch} />
-        <div>
-          {emojiList.map((emoji) => (
-            <div key={emoji.symbol}>{emoji.symbol}</div>
-          ))}
-        </div>
-      </div>
-    );
-  }*/
-
   function handleOnClickEmoji(emoji) {
     const cursorPos = inputRef.current.selectionStart;
     const text = inputRef.current.value;
